@@ -1,3 +1,5 @@
 #!/bin/bash
-# sends a request to a URL passed as an argument, and displays only the status code of the response. no pipe
-awk 'NR==1{printf "%s", $2}' test7 $(curl -sI "$1" -o test7)
+# Makes a request to 0.0.0.0:5000/catch_me that gets the message "You got me!".
+curl -sL -X PUT -H "Origin: HolbertonSchool" -d "user_id=98" 0.0.0.0:5000/catch_me
+
+
