@@ -1,1 +1,1 @@
-Debugging is the beginning of better programme in life 
+Debugging is the beginning of better programme
